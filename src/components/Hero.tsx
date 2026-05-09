@@ -39,7 +39,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-muted mb-10 leading-relaxed"
           >
-            Most founders are buried in repetitive tasks that could be automated. 
+            Most founders are buried in repetitive tasks that could be automated.
             We build custom AI systems that reclaim your time, reduce overhead, and scale your operations without increasing headcount.
           </motion.p>
 
