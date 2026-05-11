@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "NeuralOps | AI Automation Agency for B2B Scale",
   description: "Reclaim 20+ hours a week with custom AI automation systems. We build autonomous workflows for business owners, operators, and founders.",
 };
+
+import { ScrollProgress } from "@/components/ScrollProgress";
+import { SpotlightCursor } from "@/components/SpotlightCursor";
 
 export default function RootLayout({
   children,
@@ -25,9 +28,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-[#030014] text-white selection:bg-accent/30">
+        <ScrollProgress />
+        <SpotlightCursor />
+        {children}
+      </body>
     </html>
   );
 }
+

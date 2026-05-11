@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const steps = [
   {
@@ -27,31 +28,55 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-24">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">How we reclaim your time</h2>
-          <p className="text-muted max-w-2xl mx-auto">
+    <section id="how-it-works" className="py-32 relative">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-24">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-bold text-white mb-6 font-heading"
+          >
+            How we <span className="text-accent">reclaim your time</span>
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-muted text-lg max-w-2xl mx-auto"
+          >
             A structured, no-nonsense approach to transforming your manual operations into autonomous systems.
-          </p>
+          </motion.p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, i) => (
-            <div key={i} className="relative group">
-              <div className="text-5xl font-black text-white/5 absolute -top-8 -left-2 transition-colors group-hover:text-accent/10">
+            <motion.div 
+              key={i} 
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.1 }}
+              className="relative group p-8 rounded-3xl glass border-white/5 hover:border-accent/20 transition-all duration-500"
+            >
+              <div className="text-6xl font-black text-accent/5 absolute top-4 right-6 transition-colors group-hover:text-accent/10">
                 {step.number}
               </div>
-              <div className="relative z-10 pt-4">
-                <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-                <p className="text-muted text-sm leading-relaxed">
+              <div className="relative z-10">
+                <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center text-accent font-bold mb-6 group-hover:bg-accent group-hover:text-white transition-all duration-500">
+                  {step.number}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-4">{step.title}</h3>
+                <p className="text-muted leading-relaxed">
                   {step.description}
                 </p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
     </section>
   );
 }
+

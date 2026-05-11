@@ -1,4 +1,4 @@
-# Implementation Plan: Visual Upgrade
+`# Implementation Plan: Visual Upgrade
 
 This document outlines the strategy for upgrading the landing page's visual identity to a premium, high-converting B2B experience. The goal is to move from a standard layout to a dynamic, "alive" interface that wows visitors through sophisticated motion, depth, and micro-interactions.
 
@@ -62,30 +62,30 @@ Add life to static content using Framer Motion.
 
 ## Implementation Checklist
 
-### [ ] Foundations & Global Styles
-- [ ] Define CSS variables for the new accent color and glassmorphism tokens.
-- [ ] Setup Google Fonts (Outfit/Inter) in `layout.tsx`.
-- [ ] Create a `BackgroundLayer` component with noise, grid, and animated blobs.
+### [x] Foundations & Global Styles
+- [x] Define CSS variables for the new accent color and glassmorphism tokens.
+- [x] Setup Google Fonts (Outfit/Inter) in `layout.tsx`.
+- [x] Create a `BackgroundLayer` component with noise, grid, and animated blobs.
 
-### [ ] Hero Section Upgrade
-- [ ] Implement staggered text reveal for the main H1.
-- [ ] Design and animate 2-3 "Floating UI" cards.
-- [ ] Add the radial glow effect behind the Hero text.
-- [ ] Add "Orbit Dots" particle effect.
+### [x] Hero Section Upgrade
+- [x] Implement staggered text reveal for the main H1.
+- [x] Design and animate 2-3 "Floating UI" cards.
+- [x] Add the radial glow effect behind the Hero text.
+- [x] Add "Orbit Dots" particle effect.
 
-### [ ] Layout & Rhythm
-- [ ] Apply glassmorphism styling to all cards across the site.
-- [ ] Implement alternating section layouts (Split vs Centered).
-- [ ] Add smooth "Section Dividers" (SVG or CSS masks).
+### [x] Layout & Rhythm
+- [x] Apply glassmorphism styling to all cards across the site.
+- [x] Implement alternating section layouts (Split vs Centered).
+- [x] Add smooth "Section Dividers" (SVG or CSS masks).
 
-### [ ] Interactive Components
-- [ ] **For/Not For Section**: Add hover lift, glowing borders, and icon animations.
-- [ ] **Stats/Counters**: Add `motion.span` for counting animations.
-- [ ] **Logo Strip**: Create an infinite horizontal scroll marquee.
-- [ ] **Testimonial Carousel**: Build a responsive carousel with Framer Motion `AnimatePresence`.
+### [x] Interactive Components
+- [x] **For/Not For Section**: Add hover lift, glowing borders, and icon animations.
+- [x] **Stats/Counters**: Add `motion.span` for counting animations.
+- [x] **Logo Strip**: Create an infinite horizontal scroll marquee.
+- [x] **Testimonial Carousel**: Build a responsive carousel with Framer Motion `AnimatePresence`.
 
-### [ ] Motion & Polish
-- [ ] Add global `fade-up` stagger to all section lists.
-- [ ] Implement subtle parallax on background blobs during scroll.
-- [ ] Add "Pulse" micro-animations to primary CTA buttons.
-- [ ] Audit all spacing for "generous" white space (consistent `py-24` or `py-32`).
+### [x] Motion & Polish
+- [x] Add global `fade-up` stagger to all section lists.
+- [x] Implement subtle parallax on background blobs during scroll.
+- [x] Add "Pulse" micro-animations to primary CTA buttons.
+- [x] Audit all spacing for "generous" white space (consistent `py-24` or `py-32`).
