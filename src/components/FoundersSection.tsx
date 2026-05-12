@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export const FoundersSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="founders" className="py-24 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="glass-morphism rounded-[40px] overflow-hidden border border-white/10">
           <div className="grid lg:grid-cols-2">

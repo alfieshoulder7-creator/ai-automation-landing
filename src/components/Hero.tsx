@@ -50,7 +50,7 @@ export default function Hero() {
   const words = "Stop losing 20+ hours a week to manual operations".split(" ");
 
   return (
-    <section className="relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
+    <section id="top" className="relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden">
       {/* Background Decor (Layered behind content) */}
       <div className="absolute inset-0 -z-10 pointer-events-none overflow-hidden">
         {/* Radial Glow */}

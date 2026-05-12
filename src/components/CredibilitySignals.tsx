@@ -9,7 +9,7 @@ const partners = [
 
 export default function CredibilitySignals() {
   return (
-    <section className="py-16 border-y border-white/5 relative overflow-hidden">
+    <section id="credibility" className="py-16 border-y border-white/5 relative overflow-hidden">
       <div className="absolute inset-0 bg-accent/5 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <p className="text-center text-[10px] font-bold uppercase tracking-[0.3em] text-accent mb-12">

@@ -37,7 +37,7 @@ const itemVariants = {
 
 export default function ForNotFor() {
   return (
-    <section id="for-who" className="py-32 relative overflow-hidden">
+    <section id="for-not-for" className="py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-20">
           <motion.h2 

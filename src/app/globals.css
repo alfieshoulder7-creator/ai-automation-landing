@@ -81,6 +81,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Fixed navbar (h-20) — keep hash targets visible */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading), system-ui, sans-serif;
 }
