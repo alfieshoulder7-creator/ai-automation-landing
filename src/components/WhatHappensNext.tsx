@@ -5,7 +5,7 @@ import { PhoneCall, FileText, CheckCircle } from 'lucide-react';
 
 export default function WhatHappensNext() {
   return (
-    <section className="py-24 border-t border-white/5">
+    <section id="whats-next" className="py-24 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">What happens next?</h2>
@@ -18,7 +18,7 @@ export default function WhatHappensNext() {
           {[
             {
               icon: <PhoneCall className="text-accent" />,
-              title: "1. 30-Min Discovery",
+              title: "1. Discovery",
               desc: "A brief call to understand your business model, current tools, and operational pain points."
             },
             {

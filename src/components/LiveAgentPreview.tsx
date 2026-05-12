@@ -23,7 +23,7 @@ export const LiveAgentPreview = () => {
   }, []);
 
   return (
-    <section className="py-24 bg-black/20">
+    <section id="live-preview" className="py-24 bg-black/20">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>

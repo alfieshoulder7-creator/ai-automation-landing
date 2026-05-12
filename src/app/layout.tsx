@@ -17,7 +17,6 @@ export const metadata: Metadata = {
   description: "Reclaim 20+ hours a week with custom AI automation systems. We build autonomous workflows for business owners, operators, and founders.",
 };
 
-import { ScrollProgress } from "@/components/ScrollProgress";
 import { SpotlightCursor } from "@/components/SpotlightCursor";
 
 export default function RootLayout({
@@ -31,7 +30,6 @@ export default function RootLayout({
       className={`${inter.variable} ${outfit.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#030014] text-white selection:bg-accent/30">
-        <ScrollProgress />
         <SpotlightCursor />
         {children}
       </body>
