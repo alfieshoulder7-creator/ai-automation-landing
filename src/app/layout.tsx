@@ -18,46 +18,22 @@ const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL
   : 'https://neuralops-ai.vercel.app';
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ai-automation-landing-one.vercel.app"),
   title: "NeuralOps | AI Automation Agency for B2B Scale",
   description: "Reclaim 20+ hours a week with custom AI automation systems. We build autonomous workflows for business owners, operators, and founders.",
-  metadataBase: new URL(baseUrl),
-  alternates: {
-    canonical: '/',
-  },
-  keywords: ["AI Automation", "B2B Automation", "Autonomous Workflows", "Business Efficiency", "NeuralOps", "AI Agency"],
-  authors: [{ name: "NeuralOps Team" }],
   openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: baseUrl,
-    siteName: "NeuralOps",
-    title: "NeuralOps | AI Automation Agency",
-    description: "Reclaim 20+ hours a week with custom AI automation systems. Autonomous workflows for B2B scale.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://ai-automation-landing-one.vercel.app/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NeuralOps - AI Automation Agency",
+        alt: "NeuralOps AI Automation Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "NeuralOps | AI Automation Agency",
-    description: "Reclaim 20+ hours a week with custom AI automation systems.",
-    images: ["/og-image.png"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+    images: ["https://ai-automation-landing-one.vercel.app/og-image.png"],
   },
 };
 
