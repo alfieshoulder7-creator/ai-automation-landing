@@ -13,27 +13,33 @@ const outfit = Outfit({
   subsets: ["latin"],
 });
 
-const baseUrl = process.env.NEXT_PUBLIC_VERCEL_URL 
-  ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}` 
-  : 'https://neuralops-ai.vercel.app';
+const siteUrl = "https://ai-automation-landing-one.vercel.app";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ai-automation-landing-one.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title: "NeuralOps | AI Automation Agency for B2B Scale",
   description: "Reclaim 20+ hours a week with custom AI automation systems. We build autonomous workflows for business owners, operators, and founders.",
   openGraph: {
+    title: "NeuralOps | AI Automation Agency for B2B Scale",
+    description: "Reclaim 20+ hours a week with custom AI automation systems.",
+    url: siteUrl,
+    siteName: "NeuralOps",
     images: [
       {
-        url: "https://ai-automation-landing-one.vercel.app/og-image.png",
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
         alt: "NeuralOps AI Automation Agency",
       },
     ],
+    locale: "en_GB",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    images: ["https://ai-automation-landing-one.vercel.app/og-image.png"],
+    title: "NeuralOps | AI Automation Agency for B2B Scale",
+    description: "Reclaim 20+ hours a week with custom AI automation systems.",
+    images: [`${siteUrl}/og-image.png`],
   },
 };
 
