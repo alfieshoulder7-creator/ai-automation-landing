@@ -19,6 +19,15 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: "NeuralOps | AI Automation Agency for B2B Scale",
   description: "Reclaim 20+ hours a week with custom AI automation systems. We build autonomous workflows for business owners, operators, and founders.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "NeuralOps | AI Automation Agency for B2B Scale",
     description: "Reclaim 20+ hours a week with custom AI automation systems.",
